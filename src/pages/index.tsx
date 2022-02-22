@@ -6,7 +6,7 @@ const Home: NextPage = () => {
 	return (
 		<Layout>
 			<SEO />
-			<div className="gradient_bg">
+			<div className="bg-gradient-bg">
 				<Navbar />
 				<Header />
 			</div>
