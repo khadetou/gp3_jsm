@@ -1,12 +1,22 @@
 import { NextPage } from 'next';
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import { Layout, SEO, Article, Brand, Cta, Feature, Navbar } from '../components/index';
+import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from '../containers';
 
 const Home: NextPage = () => {
 	return (
 		<Layout>
 			<SEO />
-			<h1 className="text-3xl font-bold underline">Hello World</h1>
+			<div className="gradient_bg">
+				<Navbar />
+				<Header />
+			</div>
+			<Brand />
+			<WhatGPT3 />
+			<Features />
+			<Possibility />
+			<Cta />
+			<Blog />
+			<Footer />
 		</Layout>
 	);
 };
