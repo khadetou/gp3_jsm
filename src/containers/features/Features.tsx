@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 const Features: FC = () => {
-	return <div>Features</div>;
+	return <div>Featres</div>;
 };
 
 export default Features;
