@@ -6,7 +6,7 @@ const Home: NextPage = () => {
 	return (
 		<Layout>
 			<SEO />
-			<div className="bg-gradient-bg hover:animate-scale-up-center">
+			<div className="bg-gradient-bg">
 				<Navbar />
 				<Header />
 			</div>
