@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Feature } from "../../components";
 
 const FeaturesData = [
   {
@@ -21,17 +22,22 @@ const FeaturesData = [
 
 const Features: FC = () => {
   return (
-    <div className="gpt3__features section__padding" id="features">
-      <div className="gpt3__features-heading">
-        <h1 className="gradient__text">
+    <div
+      className="gpt3__features section__padding py-16 px-8 mobile:p-16 tablet:py-16 tablet:px-24 w-full flex justify-between flex-col tabletlg:flex-row"
+      id="features"
+    >
+      <div className="gpt3__features-heading flex-1 flex justify-start items-start flex-col text-left tabletlg:mr-20 mt-0 mr-0 mb-8 ml-0">
+        <h1 className="text-gradient mobile:text-[34px] mobile:leading-[45px] text-xl leading-[38px] font-extrabold font-manrope">
           The future is Now and You Just Need to Realize It. Step inot Future
           Today. & Make it Happen.
         </h1>
-        <p>Request Early Access to Get Started</p>
+        <p className="text-base leading-[30px] font-medium text-subtext mt-8">
+          Request Early Access to Get Started
+        </p>
       </div>
-      <div className="gpt3__features-container">
+      <div className="gpt3__features-container flex-[1.5] flex justify-start items-center flex-col">
         {FeaturesData.map(({ title, text }, idx) => (
-          <div></div>
+          <Feature title={title} text={text} key={title + idx} />
         ))}
       </div>
     </div>
