@@ -6,7 +6,7 @@ import ai from "/public/assets/images/ai.png";
 const Header: FC = () => {
   return (
     <div
-      className="gpt3_header tablet:py-8 px-24 flex  flex-col tablet:flex-row section_padding"
+      className="gpt3_header tablet:py-16 tablet:px-24 tablet: px-24 flex  flex-col tablet:flex-row section_padding"
       id="home"
     >
       <div
